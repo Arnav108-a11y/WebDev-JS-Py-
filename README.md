@@ -14,14 +14,15 @@ My work comprises of the usage of languages like HTML & Python, where the user i
 
    [PS: I had to research about these modules before using them on my project, as I was figuring out which modules I might need for this project.] 
 
-3.Further I created a Logic.py* while deals with what happens with the user interaction after the data is taken, whether to redirect, or to flag an error, or to direct either to the signup or dashboard.html interface.
-  I used:
+3.Further I created a Logic.py* while deals with what happens with the user interaction after the data is taken, whether to redirect, or to flag an error, or to direct either to the signup or dashboard.html interface.I used:
   Flask: A minimal web framework used to handle HTTP requests and HTML templates, defining URL routes.
   Render_template*: connects an app.route to an HTML template, seperating python logic from HTML template.
-  Request: I used request.form to extract the data from my HTML template files into the logic frame, also method like GET & POST from request.method. Generally used to handle Client server requests.
-          {GET: retrieve data from server, POST: send data to server}
+  Request: I used request.form to extract the data from my HTML template files into the logic frame, also method like GET &  
+  POST from request.method. Generally used to handle Client server requests.
+                 {GET: retrieve data from server, POST: send data to server}
   redirect: used to return an HTTP redirect response to to some other URL. eg. after logging out redirect to login page. 
-  url_for*: Dynamic URL builer for routes based on functions. [I tried using href initially which made me realise I have to update the app.route each time I use it, faced a error first time around]
+  url_for*: Dynamic URL builer for routes based on functions. 
+  [I tried using href initially which made me realise I have to update the app.route each time I use it, faced a error first    time around]
   flash: To show one time messages to user before re-direction. 
   session: Used for Individual user sessions, storing their data exclusively using cookies.
 
