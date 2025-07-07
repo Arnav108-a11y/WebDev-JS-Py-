@@ -6,6 +6,12 @@ app.secret_key = 'your_super_secret_key_change_me'
 
 auth = AuthSystem()
 
+@app.route('/healthz')
+def healthz():
+    """A simple health check endpoint."""
+    return "OK", 200
+
+
 @app.route('/')
 def index():
     # If user is already logged in, redirected to dashboard
